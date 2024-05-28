@@ -1,0 +1,54 @@
+/* 共通の設定 */
+
+li {
+  list-style: none;
+  margin-bottom: 0.3rem;
+}
+
+button {
+  padding: 0.2rem 0.1rem;
+}
+
+/* コンテンツを囲む大枠のcontainer */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+}
+
+/* 見出しを含むcontainer */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* おまけ用のダークモードボタン */
+#dark-mode-btn {
+  background-color: gray;
+  color: white;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#dark-mode-btn:hover {
+  opacity: 0.7;
+}
+
+.dark {
+  background-color: black;
+  color: silver;
+}
+.dark #dark-mode-Btn {
+  background-color: silver;
+  color: black;
+}
+
+/* チェック後の文字に取り消し線 */
+li.done span{
+  text-decoration: line-through;
+}
