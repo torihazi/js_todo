@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>To Do List</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header-container">
+      <h2>To Do</h2>
+      <button id="dark-mode-btn">ダークモード</button>
+    </div>
+    <form id="js-form">
+      <input  
+        id="js-form-input"
+        class="new-todo"
+        type="text"
+        placeholder="What need to be done?"
+        autocomplete="off"
+      >
+      <input type="submit" value="保存">
+    </form>
+
+    <div id="js-list-container">
+      <h3>To-do</h3>
+      <div id="js-todo-list" class="todo-list">
+      </div>
+      <h3>Done</h3>
+      <div id="js-done-list" class="done-list">
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <span id="js-all-count">全タスク数: 0</span>
+      <span id="js-todo-count">未完了: 0</span>
+      <span id="js-done-count">完了済: 0</span>
+    </footer>
+  </div>
+
+  <template id="list-template">
+    <li>
+      <input type="checkbox" class="checkbox">
+      <span class="content"></span>
+      <button class="updBtn">編集</button>
+      <button class="delBtn">削除</button>
+    </li>
+  </template>
+
+  <template id="update-form-template">
+      <input  
+        id="js-updateForm-input"
+        class="update-todo"
+        type="text"
+        autocomplete="off"
+      >
+      <button class="finBtn">更新</button>
+  </template>
+  
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
